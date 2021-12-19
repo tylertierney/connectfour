@@ -1,1 +1,74 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  box-sizing: border-box;
+  --boardHeight: 300px;
+  --boardWidth: 460px;
+  --columnWidth: calc(var(--boardWidth) / 7);
+  --squareHeight: calc(var(--boardHeight) / 6);
+  --borderColor: rgb(255, 255, 255, 0.6);
+  --redCircle: red;
+  --blueCircle: rgb(0, 234, 255);
+  font-family: "Readex Pro", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #192e53;
+}
+
+.gameboard {
+  height: var(--boardHeight);
+  width: var(--boardWidth);
+  border: 2px solid var(--borderColor);
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 1px rgb(0, 0, 0, 0.8);
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.gameboard .column {
+  opacity: 1;
+  width: var(--columnWidth);
+  height: var(--boardHeight);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.column:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.square {
+  height: var(--squareHeight);
+  width: var(--columnWidth);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  height: calc((var(--squareHeight) / 10) * 9);
+  width: calc((var(--columnWidth) / 10) * 7.6);
+  border-radius: 50%;
+  background-color: white;
+}
+
+.red {
+  background-color: var(--redCircle);
+}
+
+.blue {
+  background-color: var(--blueCircle);
+}

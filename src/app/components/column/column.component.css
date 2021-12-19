@@ -1,0 +1,7 @@
+:host {
+  border-right: 2px solid var(--borderColor);
+}
+
+:host:last-child {
+  border: none;
+}

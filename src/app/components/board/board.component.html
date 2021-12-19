@@ -1,0 +1,8 @@
+<div class="gameboard">
+  <app-column
+    *ngFor="let col of gameState; let i = index"
+    [column]="col"
+    [gameState]="gameState"
+    (click)="makeMove(i)"
+  ></app-column>
+</div>
