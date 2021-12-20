@@ -1,1 +1,28 @@
+:host {
+  height: 100%;
+  width: 100%;
+}
 
+.square {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  height: 80%;
+  width: 66%;
+  border-radius: 50%;
+  /* background-color: rgba(255, 255, 255, 0.855); */
+  border: 2px solid rgba(255, 255, 255, 0.855);
+}
+
+.red {
+  background-color: var(--redCircle);
+}
+
+.blue {
+  background-color: var(--blueCircle);
+}

@@ -1,0 +1,17 @@
+<h1>Welcome to Connect 4!</h1>
+
+<h3 *ngIf="winner; else elseBlock">
+  You win,
+  <span
+    [style.color]="winner === 'Red' ? 'var(--redCircle)' : 'var(--blueCircle)'"
+    >{{ winner }}</span
+  >!
+</h3>
+<ng-template #elseBlock>
+  <h3>
+    Your turn,&nbsp;<span
+      [style.color]="redIsNext ? 'var(--redCircle)' : 'var(--blueCircle)'"
+      >{{ redIsNext ? "Red" : "Blue" }}</span
+    >
+  </h3>
+</ng-template>

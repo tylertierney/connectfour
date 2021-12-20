@@ -1,1 +1,7 @@
-<app-board></app-board>
+<app-instructions [redIsNext]="redIsNext" [winner]="winner"></app-instructions>
+<app-board
+  [gameState]="gameState"
+  [redIsNext]="redIsNext"
+  [winner]="winner"
+  [makeMove]="makeMove"
+></app-board>

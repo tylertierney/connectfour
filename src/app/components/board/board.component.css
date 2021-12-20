@@ -1,7 +1,12 @@
-/* .gameboard {
-  height: 300px;
-  width: 460px;
+.gameboard {
+  height: var(--boardHeight);
+  width: var(--boardWidth);
+  border: 2px solid var(--borderColor);
+  border-radius: 16px;
+  box-shadow: 0px 0px 20px 1px rgb(0, 0, 0, 0.8);
+  overflow: hidden;
   display: flex;
   justify-content: space-around;
   align-items: center;
-} */
+  padding: 10px;
+}
