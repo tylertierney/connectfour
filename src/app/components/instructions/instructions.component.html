@@ -1,6 +1,5 @@
-<h1>Welcome to Connect 4!</h1>
-
 <div *ngIf="winner; else elseBlock" class="winnerContainer">
+  <h1>Game Over!</h1>
   <h3>
     You win,
     <span
@@ -10,13 +9,20 @@
       >{{ winner }}</span
     >!
   </h3>
-  <button>Play Again?</button>
+  <button (click)="startNewGame()">Play Again?</button>
 </div>
 <ng-template #elseBlock>
+  <h1>Welcome to Connect 4!</h1>
   <h3>
     Your turn,&nbsp;<span
       [style.color]="redIsNext ? 'var(--redCircle)' : 'var(--blueCircle)'"
       >{{ redIsNext ? "Red" : "Blue" }}</span
     >
   </h3>
+  <button
+    [style.visibility]="winner ? 'visible' : 'hidden'"
+    (click)="startNewGame()"
+  >
+    Play Again?
+  </button>
 </ng-template>

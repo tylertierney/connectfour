@@ -34,4 +34,8 @@ export class AppComponent implements OnInit {
   makeMove = (i: number) => {
     this.gameStateService.makeMove(i);
   };
+
+  startNewGame = () => {
+    this.gameStateService.startNewGame();
+  };
 }

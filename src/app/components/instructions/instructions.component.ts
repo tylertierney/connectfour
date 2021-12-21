@@ -10,6 +10,7 @@ import { GamestateService } from '../../services/gamestate.service';
 export class InstructionsComponent implements OnInit {
   @Input() winner: string | null;
   @Input() redIsNext: boolean;
+  @Input() startNewGame: Function;
 
   constructor(private gameStateService: GamestateService) {}
 

@@ -65,4 +65,16 @@ export class GamestateService {
       }
     }
   };
+
+  startNewGame = () => {
+    this.winner = null;
+    this.redIsNext = true;
+    this.gameState = Array(7)
+      .fill(0)
+      .map(() => Array(6).fill(0));
+
+    this.gamestateStore.next(this.gameState);
+    this.currentPlayerStore.next(this.redIsNext);
+    this.winnerStore.next(this.winner);
+  };
 }
