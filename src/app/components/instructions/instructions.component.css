@@ -12,3 +12,32 @@ h1 {
 h3 {
   margin-top: 10px;
 }
+
+.winnerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background-color: transparent;
+  font-size: 1.2rem;
+  border: 2px solid var(--borderColor);
+  border-radius: 5px;
+  color: rgba(255, 255, 255, 0.896);
+  padding: 8px;
+  transition: 0.2s ease-in-out;
+  opacity: 1;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:active {
+  transition: none;
+  transform: translate(1%, 1%);
+  box-shadow: 3px 3px 10px 1px rgb(0, 0, 0, 0.3);
+}
