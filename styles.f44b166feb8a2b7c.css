@@ -1,0 +1,1 @@
+:root{box-sizing:border-box;--boardHeight: 300px;--boardWidth: 460px;--borderColor: rgb(255, 255, 255, .6);--redCircle: red;--blueCircle: rgb(0, 234, 255);--textColor: white;font-family:Readex Pro,sans-serif}body{display:flex;flex-direction:column;align-items:center;justify-content:center;width:100vw;height:100vh;overflow:hidden;background-color:#192e53}
