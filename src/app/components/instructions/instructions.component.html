@@ -9,7 +9,6 @@
       >{{ winner }}</span
     >!
   </h3>
-  <button (click)="startNewGame()">Play Again?</button>
 </div>
 <ng-template #elseBlock>
   <h1>Welcome to Connect 4!</h1>
@@ -19,10 +18,10 @@
       >{{ redIsNext ? "Red" : "Blue" }}</span
     >
   </h3>
-  <button
-    [style.visibility]="winner ? 'visible' : 'hidden'"
-    (click)="startNewGame()"
-  >
-    Play Again?
-  </button>
 </ng-template>
+<button
+  (click)="startNewGame()"
+  [style.visibility]="winner ? 'visible' : 'hidden'"
+>
+  Play Again?&nbsp;<fa-icon [icon]="faSync"></fa-icon>
+</button>

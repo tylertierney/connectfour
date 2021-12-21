@@ -6,6 +6,7 @@ import { BoardComponent } from './components/board/board.component';
 import { ColumnComponent } from './components/column/column.component';
 import { SquareComponent } from './components/square/square.component';
 import { InstructionsComponent } from './components/instructions/instructions.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -13,12 +14,10 @@ import { InstructionsComponent } from './components/instructions/instructions.co
     BoardComponent,
     ColumnComponent,
     SquareComponent,
-    InstructionsComponent
+    InstructionsComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule, FontAwesomeModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
